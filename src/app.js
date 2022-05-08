@@ -10,6 +10,7 @@ const geoCode = require("./utils/geoCode");
 const weatherKing = require("./utils/weatherKing");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 //path for public, views and partials
 const pathToPublic = path.join(__dirname, "../public");
@@ -104,6 +105,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("server is up");
 });
