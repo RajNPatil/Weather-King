@@ -83,6 +83,7 @@ app.get("/weather", (req, res) => {
             response.temperature +
             " degrees outside and it feels like " +
             response.feelslike,
+          details1: "Wind speed is " + response.wind_speed + "km/h.",
         });
       });
     }
