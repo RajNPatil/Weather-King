@@ -1,6 +1,5 @@
 const path = require("path");
 const express = require("express");
-const { kStringMaxLength } = require("buffer");
 const hbs = require("hbs");
 
 //Getting weather modules
